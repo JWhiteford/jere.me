@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  {% include head.html %}
+<body>
+  {% include nav.html %}
+
+  <header class="home-banner" role="banner">
+  <!-- {% include header.html %} -->
+
+    <div class="wrap">
+      <div class="row-xs-height">
+        <div class="col-xs-height col-middle">
+          <aside>
+            <img src="{{ site.url }}/img/{{ site.avatar }}" alt="jere.me" class="logo"></aside>
+            <main role="main">
+              {{ content }}
+<!--
+        {% if page.page == "portfolio" %}
+          <h1>portfolio page</h1>
+        {% else %}
+        {% endif %}
+-->
+            </main>
+         </div>
+      </div>
+    </div>
+  </header>
+
+<!-- blurred menu
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="blur">
+        <feGaussianBlur stdDeviation="5"/>
+      </filter>
+    </defs>
+  </svg>
+-->
+
+  <!-- {% include footer.html %} -->
+  {% include scripts.html %}
+
+</body>
+</html>

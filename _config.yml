@@ -1,0 +1,68 @@
+# Site settings
+title:              jere.me
+description:        "A front-end web development portfolio for jere.me. Located in Edmonton, Alberta. Building user friendly web sites for small business."
+logo:
+baseurl:            "" # the subpath of your site, e.g. /blog/
+url:                "http://localhost:4000" # the base hostname & protocol for your site
+search:             true
+share:              true
+readtime:           true
+wpm:                200 # Specify the average Words per minute. If not defined, 180 will be used
+default_bg:         background-lg.jpg
+# exclude:          ["node_modules", "gulpfile.js", "package.json"]
+
+# Build settings
+highlighter:        rouge
+markdown:           rdiscount
+
+# Owner/author information
+owner:              jere.me
+name:               Jeremy Whiteford
+avatar:             jere.me.png
+email:              me@jere.me
+
+# Social networking links used in footer. Update and remove as you like.
+# For Google Authorship https://plus.google.com/authorship
+facebook:           jswhiteford
+twitter:            J_Whiteford
+github:             JWhiteford
+google_plus:        https://plus.google.com/u/0/+JeremyWhiteford1
+linkedin:           https://www.linkedin.com/pub/jeremy-whiteford/2a/aa8/246
+instagram:          jeremywhiteford
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-50965860-1
+google_verify:      6UQq8wzzv-HK5n_gAUg1bXy6jDM5YSCr-fX7Wi44HNE
+bing_verify:        71BD74D054DB28A1EA59D9755455FD7B
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           America/Edmonton
+future:             true
+paginate:           6
+paginate_path:      "page:num"
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:          /:categories/:title
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: jere.me
+    url: /
+    home: home
+  - title: about
+    url: /about
+  - title: portfolio
+    url: /portfolio
+#  - title: posts
+#    url: /blog
+  - title: contact
+    url: /contact
+#  - title: external-link facebook
+#    url: https://www.facebook.com
+#    external: true
+
+gems:
+  - jekyll-compass
+  - jekyll-sitemap

@@ -1,0 +1,18 @@
+// Requirements
+// ============
+
+@import "susy";
+
+$susy: (
+	columns: 12,
+	container: 1170px,
+/*
+	debug: (
+		image: show,
+		output: overlay,
+		toggle: top right
+	),
+*/
+	global-box-sizing: border-box
+);
+@include border-box-sizing;

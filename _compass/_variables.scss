@@ -1,0 +1,47 @@
+// colors
+$white:   #fff;
+$black:   #000;
+$color-1: #202020; // dark gray
+$color-2: lighten($color-1, 20%);
+$color-3: #701c1c; // red
+
+// z-index
+$content-zindex: 1;
+$layer-nav-zindex: 2;
+$nav-zindex: 3;
+$layer-content-zindex: 4;
+$trigger-zindex: 5;
+
+// fonts
+// @include web-fonts((Lato));
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Lato', sans-serif;
+
+// padding and spacing
+$spacing-unit:  30px;
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// media queries
+$S:   480px;
+$M:   1024px;
+$L:   1170px;
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+    @media only screen and (min-width: $S) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; }
+  }
+}
+
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}

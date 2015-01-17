@@ -1,0 +1,10 @@
+---
+require:
+- jekyll-compass
+- susy
+project_path: C:\Users\jeremyw\Desktop\compass-jekyll
+http_path: /
+css_dir: css
+sass_dir: _compass
+images_dir: img
+javascripts_dir: js

@@ -1,0 +1,15 @@
+lable {
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: $color-1;
+  color: $white;
+  border: none;
+  border-bottom: 1px solid $black;
+  border-left: 3px solid $black;
+}

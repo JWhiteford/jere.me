@@ -1,0 +1,252 @@
+// Screen
+// ======
+@import "normalize";
+@import "compass";
+@import "grids";
+
+@import "web-fonts";
+
+@import "variables";
+@import "mixins";
+@import "menu";
+@import "portfolio";
+@import "forms";
+@import "syntax-highlighting";
+
+
+/*
+Using media queries with like this:
+@include media-query($on-palm) {
+.wrapper {
+   padding-right: $spacing-unit / 2;
+   padding-left: $spacing-unit / 2;
+  }
+}
+*/
+@mixin media-query($device) {
+ @media screen and (max-width: $device) {
+  @content;
+ }
+}
+
+
+
+body {
+ margin: 0;
+ color: $white;
+ font-family: $primary-font;
+ font-weight: 100;
+
+  a {
+    font-weight: 300;
+  }
+}
+.wrap {
+ @include container;
+}
+
+header {
+
+ &.home-banner {
+  height: 100vh;
+  background-size: cover;
+  background-color: $color-1;
+  background: url(../img/background-sm.jpg) no-repeat;
+
+  @include MQ(S) {
+   background: url(../img/background-md.jpg) no-repeat;
+  }
+  @include MQ(M) {
+   background: url(../img/background-lg.jpg) no-repeat;
+  }
+ }
+}
+
+.logo {
+ @include center();
+}
+main {
+
+ @include MQ(M) {
+  @include span(8 last);
+ }
+}
+
+aside {
+
+ @include MQ(M) {
+  @include span(4);
+ }
+}
+
+footer {
+ @include span(12);
+}
+
+.social {
+ padding: gutter();
+ @include clearfix;
+
+ .social__list-item {
+  @include gallery(2 of 10);
+  margin-bottom: gutter(10);
+
+  @include MQ(M) {
+   @include gallery(1 of 10);
+   margin-bottom: 0;
+  }
+ }
+}
+
+// center logo
+.row-xs-height {
+  display: table-row;
+}
+.col-xs-height {
+  display: table-cell;
+  float: none;
+}
+@media (max-width: 768px) {
+  .col-xs-height {
+    display: block;
+  }
+}
+.col-middle {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* vendors */
+@import     'normalize';
+
+/* utilities */
+@import     'utilities/variables';
+@import     'utilities/functions';
+@import     'utilities/mixins';
+@import     'utilities/placeholders';
+@import     'utilities/web-fonts';
+
+/* base */
+// @import     'base/reset';
+@import     'base/typography';
+
+/* layout */
+@import     'layout/grid';
+@import     'layout/navigation';
+@import     'layout/header';
+@import     'layout/footer';
+@import     'layout/sidebar';
+@import     'layout/forms';
+
+/* components */
+@import     'components/buttons';
+// @import     'components/carousel';
+// @import     'components/cover';
+// @import     'components/dropdown';
+
+/* pages */
+// @import     'pages/home';
+// @import     'pages/contact';
+
+/* themes */
+// @import     'themes/theme';
+// @import     'themes/admin';
+
+/*shame  hacks */
+@import     'shame/shame';
+
+
+
+
+body {
+ margin: 0;
+ color: $white;
+ font-family: $primary-font;
+ font-weight: 100;
+
+  a {
+    font-weight: 300;
+  }
+}
+.wrap {
+ @include container;
+}
+
+header {
+
+ &.home-banner {
+  height: 100vh;
+  background-size: cover;
+  background-color: $color-1;
+  background: url(../img/background-sm.jpg) no-repeat;
+
+  @include MQ(S) {
+   background: url(../img/background-md.jpg) no-repeat;
+  }
+  @include MQ(M) {
+   background: url(../img/background-lg.jpg) no-repeat;
+  }
+ }
+}
+
+.logo {
+ @include center();
+}
+main {
+
+ @include MQ(M) {
+  @include span(8 last);
+ }
+}
+
+aside {
+
+ @include MQ(M) {
+  @include span(4);
+ }
+}
+
+footer {
+ @include span(12);
+}
+
+.social {
+ padding: gutter();
+ @include clearfix;
+
+ .social__list-item {
+  @include gallery(2 of 10);
+  margin-bottom: gutter(10);
+
+  @include MQ(M) {
+   @include gallery(1 of 10);
+   margin-bottom: 0;
+  }
+ }
+}
+
+// center logo
+.row-xs-height {
+  display: table-row;
+}
+.col-xs-height {
+  display: table-cell;
+  float: none;
+}
+@media (max-width: 768px) {
+  .col-xs-height {
+    display: block;
+  }
+}
+.col-middle {
+  vertical-align: middle;
+}
