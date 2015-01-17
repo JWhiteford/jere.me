@@ -1,0 +1,238 @@
+$nav-width: 300px;
+
+a,
+.sidebar,
+.nav-sidebar,
+body {
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease
+}
+body.slide {
+  left: $nav-width;
+  overflow: hidden;
+}
+.nav-main {
+  margin: 0;
+  padding: 0;
+
+  li {
+    text-align: right;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.animated {
+
+  &.small,
+  &.medium,
+  &.large {
+    opacity: 0;
+    transition-property: all;
+  }
+  .small {
+    transition-delay: 1.5s;
+    transition-duration: 0.5s;
+  }
+  .medium {
+    transition-delay: 1.35s;
+    transition-duration: 0.75s;
+  }
+  .large {
+    transition-delay: 1s;
+    transition-duration: 1s;
+  }
+}
+
+// toggle button
+a.menu-toggle {
+  position: fixed;
+  display: inline-block;
+  top: 18px;
+  left: 5%;
+  height: 44px;
+  width: 44px;
+  z-index: $trigger-zindex;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+
+  .cd-icon {
+    /* icon created in CSS */
+    position: absolute;
+    @include center; // mixin inside partials > _mixins.scss
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    background-color: $white;
+    z-index: $trigger-zindex + 1;
+
+    &:before,
+    &:after {
+      /* upper and lower lines of the menu icon */
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $white;
+
+      /* Force Hardware Acceleration in WebKit */
+      @include transform(translateZ(0));
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+
+      /* apply transition to transform property */
+      -webkit-transition: -webkit-transform .3s;
+      -moz-transition: -moz-transform .3s;
+      transition: transform .3s;
+    }
+
+    &:before {
+      @include transform(translateY(-6px) rotate(0deg));
+    }
+
+    &:after {
+      @include transform(translateY(6px) rotate(0deg));
+    }
+  }
+
+  &:before,
+  &:after {
+    /* 2 rounded colored backgrounds for the menu icon */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    /* Force Hardware Acceleration in WebKit */
+    @include transform(translateZ(0));
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    @include transition-property(transform);
+  }
+
+  &:before {
+    background-color: $color-1;
+    @include transform(scale(1));
+    @include transition-duration(.3s);
+    @include transition-delay(.4s);
+  }
+
+  &:after {
+    background-color: $color-3;
+    @include transform(scale(0));
+    @include transition-duration(0s);
+    @include transition-delay(0s);
+  }
+
+  &.close-nav:before {
+    /* user clicks on the .menu-toggle element - 1st rounded background disappears */
+    @include transform(scale(0));
+  }
+
+  &.close-nav:after {
+    /* user clicks on the .menu-toggle element - 2nd rounded background appears */
+    @include transform(scale(1));
+    @include transition-duration(.3s);
+    @include transition-delay(.4s);
+  }
+
+  &.close-nav .cd-icon {
+    /* user clicks on the .menu-toggle element - transform the icon */
+    background-color: rgba($white, 0);
+
+    &:before,
+    &:after {
+      background-color: rgba($white, 1);
+    }
+
+    &:before {
+      @include transform(translateY(0) rotate(45deg));
+    }
+
+    &:after {
+      @include transform(translateY(0) rotate(-45deg));
+    }
+  }
+
+  &.slide {
+    left: $nav-width;
+    pointer-events: none;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  // overflow-y: scroll;
+  height: 100%;
+  width: $nav-width;
+  padding: 40px 30px 0;
+  top: 0;
+  left: -$nav-width;
+  background-image: url(../img/sidebar-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: $layer-nav-zindex;
+
+  &.slide {
+    left: 0
+  }
+
+  li {
+    list-style: none;
+    line-height: 3em;
+
+    a {
+      color: $white;
+    }
+  }
+
+
+// blurred backgrounds
+/*
+  &:before {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: '';
+    background: url(../img/jere.me.png) no-repeat;
+    -webkit-filter: url('#blur');
+    filter: url('#blur');
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    background-size: cover;
+    opacity: 0.4;
+
+    @include MQ(S) {
+     background: url(../img/background-md.jpg) no-repeat;
+    }
+    @include MQ(M) {
+     background: url(../img/background-lg.jpg) no-repeat;
+    }
+  }
+*/
+}
+
+
+.nav-sidebar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: $content-zindex;
+
+  &.slide {
+    pointer-events: auto;
+    left: $nav-width;
+    background: rgba($black, 0.8);
+  }
+}
