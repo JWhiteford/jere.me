@@ -1,128 +1,68 @@
-/* vendors */
-@import     "normalize";
-@import     "compass";
-
-/* utilities */
-@import     "utilities/web-fonts";
-@import     "utilities/variables";
-@import     "utilities/functions";
-@import     "utilities/mixins";
-@import     "utilities/placeholders";
-@import     "utilities/syntax-highlighting";
-
-
-/* base */
-// @import     "base/reset";
-@import     "base/typography";
-
-/* layout */
-@import     "layout/grids";
-@import     "layout/navigation";
-@import     "layout/header";
-@import     "layout/footer";
-@import     "layout/sidebar";
-@import     "layout/forms";
-
-/* components */
-@import     "components/buttons";
-// @import     "components/carousel";
-// @import     "components/cover";
-// @import     "components/dropdown";
-
-/* pages */
-// @import     "pages/home";
-// @import     "pages/contact";
-
-/* themes */
-// @import     "themes/theme";
-// @import     "themes/admin";
-
-/*shame  hacks */
-@import     "shame/shame";
 
 
 
 
-body {
- margin: 0;
- color: $white;
- font-family: $primary-font;
- font-weight: 100;
 
-  a {
-    font-weight: 300;
+
+
+
+#menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 13.755em;
+  right: -13.755em;
+  height: 100%;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: 0.15s ease;
+  -moz-transition: 0.15s ease;
+  -o-transition: 0.15s ease;
+  transition: 0.15s ease;
+
+  &.active {
+    -webkit-transform: translate(-13.755em, 0px);
+    -moz-transform: translate(-13.755em, 0px);
+    -o-transform: translate(-13.755em, 0px);
+    -ms-transform: translate(-13.755em, 0px);
+    transform: translate(-13.755em, 0px);
   }
 }
-.wrap {
- @include container;
-}
+.container {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: 0.15s ease;
+  -moz-transition: 0.15s ease;
+  -o-transition: 0.15s ease;
+  transition: 0.15s ease;
 
-header {
-
-  &.home-banner {
-    height: 100vh;
-    background-size: cover;
-    background-color: $color-1;
-    background: url(../img/background-sm.jpg) no-repeat;
-
-    @include MQ(S) {
-      background: url(../img/background-md.jpg) no-repeat;
-    }
-    @include MQ(M) {
-      background: url(../img/background-lg.jpg) no-repeat;
-    }
+  &.active {
+    -webkit-transform: translate(-13.725em, 0px);
+    -moz-transform: translate(-13.725em, 0px);
+    -o-transform: translate(-13.725em, 0px);
+    -ms-transform: translate(-13.725em, 0px);
+    transform: translate(-13.725em, 0px);
   }
 }
-
-.logo {
-  @include center();
-}
-main {
-
-  @include MQ(M) {
-   @include span(8 last);
-  }
-}
-
-aside {
-
-  @include MQ(M) {
-    @include span(4);
-  }
-}
-
-footer {
-  @include span(12);
-}
-
-.social {
-  padding: gutter();
-  @include clearfix;
-
-  .social__list-item {
-    @include gallery(2 of 10);
-    margin-bottom: gutter(10);
-
-    @include MQ(M) {
-      @include gallery(1 of 10);
-      margin-bottom: 0;
-    }
-  }
-}
-
-// center logo
-.row-xs-height {
-  display: table-row;
-}
-.col-xs-height {
-  display: table-cell;
-  float: none;
-}
-@media (max-width: 768px) {
-  .col-xs-height {
-    display: block;
-  }
-}
-.col-middle {
-  vertical-align: middle;
+.menu-link {
+  position: absolute;
+  top: 15px;
+  left: -50px;
+  height: 35px;
+  width: 35px;
+  background: url('http://blog.tomri.ch/assets/img/menu.svg') rgba(0,0,0,0.3) no-repeat;
+  background-position: center center;
+  background-size: 50%;
+  z-index: 99;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.15s ease;
+  -moz-transition: opacity 0.15s ease;
+  -o-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
 }

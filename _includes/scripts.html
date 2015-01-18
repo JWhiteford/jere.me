@@ -1,13 +1,10 @@
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="{{ '/js/velocity.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/js/main.js' | prepend: site.baseurl }}"></script>
 
 <script>
-  $("a.menu-toggle").click(function(){
-    $(".js-sidebar,body,a.js-menu-toggle,.js-fade").addClass("slide")
-  });
-
-  $(".js-fade,main").click(function(){
-    $(".js-sidebar,body,a.js-menu-toggle,.js-fade").removeClass("slide")
+  $(".menu-link").click(function(){
+    $("#menu").toggleClass("active");
+    $(".container").toggleClass("active");
   });
 </script>
