@@ -2,42 +2,33 @@
 <html dir="ltr" lang="en">
   {% include head.html %}
 <body>
-  {% include nav.html %}
 
-  <header class="home-banner" role="banner">
-  <!-- {% include header.html %} -->
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger"><span class="nav-icon"></span></label>
+  <nav role="navigation">
+    {% include nav.html %}
+  </nav>
 
-    <div class="wrap">
-      <div class="row-xs-height">
-        <div class="col-xs-height col-middle">
+  <div class="site-wrapper">
+    <div class="site-content">
+      <div class="block--full">
+        <div class="block--centered">
           <aside>
-            <img src="{{ site.url }}/img/{{ site.avatar }}" alt="jere.me" class="logo"></aside>
-            <main role="main">
-              {{ content }}
+            <img src="{{ site.url }}/img/{{ site.avatar }}" alt="jere.me" class="logo">
+          </aside>
+          <main role="main">
+            {{ content }}
 <!--
         {% if page.page == "portfolio" %}
           <h1>portfolio page</h1>
         {% else %}
         {% endif %}
 -->
-            </main>
-         </div>
+          </main>
+        </div>
       </div>
     </div>
-  </header>
-
-<!-- blurred menu
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-      <filter id="blur">
-        <feGaussianBlur stdDeviation="5"/>
-      </filter>
-    </defs>
-  </svg>
--->
-
-  <!-- {% include footer.html %} -->
-  {% include scripts.html %}
+  </div>
 
 </body>
 </html>

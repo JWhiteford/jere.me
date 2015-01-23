@@ -40,30 +40,23 @@
 /*shame  hacks */
 @import     "shame/shame";
 
-
-
-
 body {
- margin: 0;
- color: $white;
- font-family: $primary-font;
- font-weight: 100;
-
-  a {
-    font-weight: 300;
-  }
+  margin: 0;
+  /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
 }
-.wrap {
- @include container;
+
+.site-content {
+  @include container;
 }
 
 header {
 
   &.home-banner {
     height: 100vh;
-    background-size: cover;
     background-color: $color-1;
     background: url(../img/background-sm.jpg) no-repeat;
+    background-size: cover;
 
     @include MQ(S) {
       background: url(../img/background-md.jpg) no-repeat;
@@ -74,9 +67,6 @@ header {
   }
 }
 
-.logo {
-  @include center();
-}
 main {
 
   @include MQ(M) {
@@ -110,19 +100,25 @@ footer {
   }
 }
 
-// center logo
-.row-xs-height {
-  display: table-row;
+.logo {
+  display: block;
+  margin: 0 auto;
 }
-.col-xs-height {
-  display: table-cell;
-  float: none;
-}
-@media (max-width: 768px) {
-  .col-xs-height {
-    display: block;
+
+/* Center content vertically */
+.block--full {
+  height: 100vh;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
   }
 }
-.col-middle {
+
+.block--centered {
+  display: inline-block;
   vertical-align: middle;
 }
