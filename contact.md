@@ -5,19 +5,20 @@ description: contact me
 permalink: /contact/
 ---
 
-contact page with form
-
-<form action="" method="" role="form">
-  <label for="Name">Name</label>
-  <input type="text" placeholder="name" name="Name" id="Name" required="required">
-
-  <label for="Email">Email</label>
-  <input type="email" placeholder="email" name="Email" id="Email" required="required">
-
-  <label for="Message">Message</label>
-  <textarea placeholder="message" name="message" id="Message"></textarea>
-  <input title="submit your information" type="submit" value="talk to me">
+Say Hi!
+<form action="//formspree.io/me@jere.me" method="POST">
+  <input type="hidden" name="_next" value="//localhost/thanks.html" />
+  <input type="hidden" name="_subject" value="New submission!" />
+  <ul>
+    <li><input type="text" name="name" placeholder="your name"></li>
+    <li><input type="email" name="_replyto" placeholder="your email"></li>
+    <li>
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="submit" value="Send">
+    </li>
+  </ul>
 </form>
+
 <div itemscope itemtype="http://schema.org/Person">
 <a itemprop="url" href="http:\\jere.me"><div itemprop="name"><strong>Jeremy</strong></div>
 </a>
