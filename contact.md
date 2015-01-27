@@ -8,7 +8,7 @@ permalink: /contact/
 
 #Say hi!
 <form action="//formspree.io/me@jere.me" method="POST">
-  <input type="hidden" name="_next" value="//localhost/thanks.html" />
+  <input type="hidden" name="_next" value="http://jere.me/thanks" />
   <input type="hidden" name="_subject" value="New submission from jere.me" />
   <ul class="form-contact">
     <li class="form-input"><input class="input-field required" type="text" name="name" placeholder="Name" required  autocomplete="off"></li>
