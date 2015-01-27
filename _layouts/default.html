@@ -9,26 +9,34 @@
     {% include nav.html %}
   </nav>
 
+
   <div class="site-wrapper">
+
+    {% if page.page == "portfolio" %}
+      {{ content }}
+    {% else %}
+
     <div class="site-content">
-      <div class="block--full">
-        <div class="block--centered">
+      <div class="site-full">
+       <div class="site-full--center">
           <aside>
             <img src="{{ site.url }}/img/{{ site.avatar }}" alt="jere.me" class="logo">
           </aside>
           <main role="main">
             {{ content }}
-<!--
-        {% if page.page == "portfolio" %}
-          <h1>portfolio page</h1>
-        {% else %}
-        {% endif %}
--->
           </main>
         </div>
       </div>
     </div>
+
+    {% endif %}
   </div>
+
+
+
+{% if page.page == "portfolio" %}
+  {% include scripts.html %}
+{% endif %}
 
 </body>
 </html>

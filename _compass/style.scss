@@ -32,6 +32,7 @@
 /* pages */
 // @import     "pages/home";
 // @import     "pages/contact";
+@import     "pages/portfolio";
 
 /* themes */
 // @import     "themes/theme";
@@ -44,33 +45,48 @@ body {
   margin: 0;
   /* Without this, the body has excess horizontal scroll when the menu is open */
   overflow-x: hidden;
+  color: $white;
+  font-family: $primary-font;
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
 .site-content {
   @include container;
+  padding: 0 20px;
+}
+/* absolute centering of site */
+.site-full {
+  height: 100vh;
+  position: relative;
 }
 
-header {
-
-  &.home-banner {
-    height: 100vh;
-    background-color: $color-1;
-    background: url(../img/background-sm.jpg) no-repeat;
-    background-size: cover;
-
-    @include MQ(S) {
-      background: url(../img/background-md.jpg) no-repeat;
-    }
-    @include MQ(M) {
-      background: url(../img/background-lg.jpg) no-repeat;
-    }
-  }
+.site-full--center {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 main {
 
   @include MQ(M) {
    @include span(8 last);
+  }
+
+  a {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    border-bottom: 1px solid $white;
+    transition: all 0.2s;
+
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
   }
 }
 
@@ -103,22 +119,5 @@ footer {
 .logo {
   display: block;
   margin: 0 auto;
-}
-
-/* Center content vertically */
-.block--full {
-  height: 100vh;
-
-  &:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -0.25em; /* Adjusts for spacing */
-  }
-}
-
-.block--centered {
-  display: inline-block;
-  vertical-align: middle;
+  max-width: 100%;
 }

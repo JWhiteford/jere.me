@@ -1,0 +1,45 @@
+.form-contact {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+.form-input {
+  display: inline-block;
+  width: 49%;
+  margin-bottom: 20px;
+
+  &:nth-of-type(2n) {
+    margin-left: 1%;
+  }
+}
+.form-input--block {
+  width: 100%;
+}
+
+.input-field {
+  background: $color-1;
+  padding: 20px 30px;
+  border: none;
+  border-bottom: 1px solid lighten($color-2, 10%);
+  width: 100%;
+
+  &.required {
+    background: transparent url(../img/required.svg) no-repeat right 5px top 5px;
+  }
+
+  &:focus {
+    // border: 1px solid rgba($color-3, 1);
+    // box-shadow: 0 0 5 rgba($color-3, 1);
+    outline: none;
+    background: rbga($color-1, 0.2);
+    border-bottom: 1px solid rgba($color-3, 0.85);
+  }
+}
+
+.form-input,
+.form-input--block {
+}

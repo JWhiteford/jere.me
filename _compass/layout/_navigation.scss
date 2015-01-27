@@ -12,14 +12,27 @@
   /* non-critical appearance styles */
   list-style: none;
   margin: 0;
-  background: #111;
+  background: $color-1;
+  padding-top: 200px;
+
+  @include MQ(M) {
+    background-image: url(../img/sidebar-bg.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+  }
 }
 
 /* Navigation Menu - List items */
-.nav-item a {
-  color: white;
-  font-size: 1.2em;
-  text-decoration: none;
+.nav-item {
+  line-height: 2em;
+
+    a {
+    color: $white;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: $secondary-font;
+  }
 }
 
 /* Site Wrapper - Everything that isn't navigation */
@@ -33,7 +46,6 @@
   left: 0;
   z-index: 1;
 
-
   height: 100vh;
   background-color: $color-1; /* Needs a background or else the nav will show through */
   background: url(../img/background-sm.jpg) no-repeat;
@@ -41,9 +53,11 @@
 
   @include MQ(S) {
     background: url(../img/background-md.jpg) no-repeat;
+    background-size: cover;
   }
   @include MQ(M) {
     background: url(../img/background-lg.jpg) no-repeat;
+    background-size: cover;
   }
 }
 
@@ -54,12 +68,13 @@ label[for="nav-trigger"] {
   top: 15px;
   z-index: 2;
   /* non-critical appearance styles */
-  padding: 15px;
+  padding: 25px;
   cursor: pointer;
   background: #333;
   border-radius: 100%;
   background: url('../img/menu.svg') no-repeat center center;
   background-size: contain;
+  transition: background 0.2s;
 
   span:before,
   span:after {
@@ -102,7 +117,7 @@ label[for="nav-trigger"] {
 
     + label {
       left: 215px;
-      background: url('../img/cd-icon-close-mobile.svg') no-repeat center center;
+      background: url('../img/menu-close.svg') no-repeat center center;
       border-radius: 100%;
     }
 
@@ -116,4 +131,15 @@ label[for="nav-trigger"] {
 .nav-trigger + label,
 .site-wrapper {
   transition: left 0.2s;
+}
+
+.nav-icon--circle {
+  fill: $color-3;
+
+  &:hover {
+    fill: darken($color-3, 10%);
+  }
+}
+.nav-icon--line {
+  fill: $white;
 }
