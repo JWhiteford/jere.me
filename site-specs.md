@@ -5,21 +5,7 @@ description: this is my about page
 permalink: /about-this-site/
 ---
 
-#about this site
+<h1>About <span>this site</span></h1>
+There were many things to consider when I decided to build this site. My requirements were simple. It needed to be easy to update, fast, mobile friendly and clean.
 
-- jekyll
-- sass/compass/susy
-- ie9 and up
-- etc
-- humans.txt
-- markdown
-- liquid template
-- npm, bower, gulp
-- git (locally)
-- command line
-- page speed tools
-- add analytics
-- minimal js
-- google fonts
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+I used [Jekyll](http://jekyllrb.com) as the static site generator, sass as my preprocessor and various tools to complete the project. To see a more in-depth list of what was used to create this site check out the humans.txt file.

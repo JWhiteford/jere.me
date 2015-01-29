@@ -9,11 +9,16 @@
 
 .form-input {
   display: inline-block;
-  width: 49%;
+  width: 100%;
   margin-bottom: 20px;
 
-  &:nth-of-type(2n) {
-    margin-left: 1%;
+
+  @include MQ(M) {
+    width: 49%;
+
+    &:nth-of-type(2n) {
+      margin-left: 1%;
+    }
   }
 }
 .form-input--block {

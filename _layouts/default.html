@@ -9,25 +9,37 @@
     {% include nav.html %}
   </nav>
 
-
   <div class="site-wrapper">
 
     {% if page.page == "portfolio" %}
       {{ content }}
     {% else %}
 
-    <div class="site-content">
-      <div class="site-full">
-       <div class="site-full--center">
-          <aside>
-            <img src="{{ site.url }}/img/{{ site.avatar }}" alt="jere.me" class="logo" height="208" width="293">
-          </aside>
-          <main role="main">
-            {{ content }}
-          </main>
+      <div class="site-content">
+        <div class="site-full">
+         <div class="site-full--center">
+            <aside>
+              <img src="{{ site.url }}/img/{{ site.avatar }}" alt="jere.me" class="logo">
+            </aside>
+            <main role="main">
+              {{ content }}
+              {% if page.page =="blog" %}
+                <ul class="post-list">
+                  {% for post in site.posts %}
+                    <li class="post-list--item">
+                      <h2>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                      </h2>
+                      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    </li>
+                  {% endfor %}
+                </ul>
+                <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+              {% endif %}
+            </main>
+          </div>
         </div>
       </div>
-    </div>
 
     {% endif %}
   </div>
