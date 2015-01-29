@@ -1,11 +1,11 @@
-<ul class="navigation">
-  {% for link in site.links %}
+<div class="fixed--cell">
+  <ul class="navigation">
+    {% for link in site.links %}
     <li class="nav-item">
-      {% if link.external %}
-        <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
-      {% else %}
-        <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-      {% endif %}
+    {% if link.external %}<a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+    {% else %}<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+    {% endif %}
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</div>

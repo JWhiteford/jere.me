@@ -6,8 +6,6 @@
 
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="google-site-verification" content="{{ site.google_verify }}">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100,300,900" >
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300" >
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />

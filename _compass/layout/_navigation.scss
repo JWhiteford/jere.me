@@ -2,7 +2,7 @@
   /* critical sizing and position styles */
   width: 100%;
   height: 100%;
-  position: fixed;
+  // position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -12,14 +12,8 @@
   /* non-critical appearance styles */
   list-style: none;
   margin: 0;
-  background: $color-1;
-  padding-top: 200px;
-
-  @include MQ(M) {
-    background-image: url(../img/sidebar-bg.png);
-    background-position: bottom left;
-    background-repeat: repeat-x;
-  }
+  // background: $color-1;
+  // padding-top: 200px;
 }
 
 /* Navigation Menu - List items */
@@ -46,7 +40,7 @@
   left: 0;
   z-index: 1;
 
-  height: 100vh;
+  // height: 100vh;
   background-color: $color-1; /* Needs a background or else the nav will show through */
   background: url(../img/background-sm.jpg) no-repeat center center fixed;
   background-size: cover;

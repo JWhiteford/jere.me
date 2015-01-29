@@ -8,7 +8,7 @@
 @import     "utilities/functions";
 @import     "utilities/mixins";
 @import     "utilities/placeholders";
-@import     "utilities/syntax-highlighting";
+// @import     "utilities/syntax-highlighting";
 
 
 /* base */
@@ -50,36 +50,56 @@ body {
   font-weight: 300;
   font-size: 1.3em;
   line-height: 1.5em;
+  background-color: $color-1;
+
+  @include MQ(M) {
+    background-image: url(../img/sidebar-bg.png);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+  }
 }
 
 .site-content {
   @include container;
   padding: 0 20px;
 }
-/* absolute centering of site */
-.site-full {
+
+/* columns of same height styles */
+.fill--table {
+  display: table;
   height: 100vh;
+  width: 100%;
+}
+.fill--row {
+  display: table-row;
+}
+.fill--cell {
   position: relative;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: none;
+
+  /* vertical alignment styles */
+  vertical-align: middle;
+
+  @include MQ(M) {
+    display: table-cell;
+  }
 }
 
-.site-full--center {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.fixed--cell {
+  position: fixed;
+  top: 100px;
+  max-width: 33.33333%;
 }
 
 main {
 
-  @include MQ(M) {
-   @include span(8 last);
-  }
-
   a {
     background: transparent;
     text-decoration: none;
-    color: white;
+    color: $white;
     font-weight: 900;
     border-bottom: 1px solid $white;
     transition: all 0.2s;
@@ -89,30 +109,16 @@ main {
     }
   }
 }
-
-aside {
-
-  @include MQ(M) {
-    @include span(4);
+@include MQ(M) {
+  aside,
+  main {
+    float: left;
   }
-}
-
-footer {
-  @include span(12);
-}
-
-.social {
-  padding: gutter();
-  @include clearfix;
-
-  .social__list-item {
-    @include gallery(2 of 10);
-    margin-bottom: gutter(10);
-
-    @include MQ(M) {
-      @include gallery(1 of 10);
-      margin-bottom: 0;
-    }
+  aside {
+    width: 33.33333%;
+  }
+  main {
+    width: 66.66667%;
   }
 }
 
@@ -120,4 +126,5 @@ footer {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  padding-top: 50px;
 }
