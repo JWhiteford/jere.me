@@ -64,7 +64,7 @@ label[for="nav-trigger"] {
   /* non-critical appearance styles */
   padding: 25px;
   cursor: pointer;
-  background: #333;
+  background: $color-2;
   border-radius: 100%;
   background: url('../img/menu.svg') no-repeat center center;
   background-size: contain;
@@ -85,7 +85,7 @@ label[for="nav-trigger"] {
   }
 
   &:before {
-    background-color: #202020;
+    background-color: $color-1;
     transform: scale(1);
     transition-duration: 0.3s;
     transition-delay: 0.4s;
@@ -103,21 +103,21 @@ label[for="nav-trigger"] {
   /* critical styles - hide the checkbox input */
   position: absolute;
   clip: rect(0, 0, 0, 0);
-  background: black;
+  background: $black;
   padding: 10px;
   border-radius: 100%;
 
   &:checked {
 
     + label {
-      left: 215px;
+      left: 265px;
       background: url('../img/menu-close.svg') no-repeat center center;
       border-radius: 100%;
     }
 
     ~ .site-wrapper {
-      left: 200px;
-      box-shadow: 0 0 50px 0 rgba(0,0,0,0.25);
+      left: 250px;
+      box-shadow: 0 0 150px 0 rgba(5,5,5, 0.9);
     }
   }
 }
