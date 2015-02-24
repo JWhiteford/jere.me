@@ -32,6 +32,7 @@
 /* pages */
 // @import     "pages/home";
 // @import     "pages/contact";
+@import     "pages/resume";
 @import     "pages/portfolio";
 
 /* themes */
@@ -131,4 +132,8 @@ main {
 
 .img-res {
   max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
 }

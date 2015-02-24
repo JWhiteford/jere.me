@@ -216,15 +216,16 @@ $items: 4;
   position: absolute;
   z-index: 1;
   left: 0;
-    top: 100vh/($items*2);
-    @include transform(translateY(-50%));
-    width: 100%;
-    text-align: center;
+  top: 100vh/($items*2);
+  width: 100%;
+  text-align: center;
+  background: rgba($color-1, 0.8);
+  @include transform(translateY(-50%));
 
-    .is-full-width & {
-    top: 50vh;
-    @include transition(opacity 0s, top 0.4s);
-  }
+  .is-full-width & {
+  top: 50vh;
+  @include transition(opacity 0s, top 0.4s);
+}
 
   > * {
     text-shadow: 0 1px 4px rgba(#000, .2);
@@ -288,7 +289,8 @@ $items: 4;
   p {
     width: 90%;
     max-width: 800px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 2;
   }
 

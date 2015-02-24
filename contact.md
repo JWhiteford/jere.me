@@ -1,7 +1,7 @@
 ---
 layout: page
 title: contact
-description: contact me
+description: Want to say hi? Simply fill in my easy to use contact form to get in touch with me
 page: contact
 permalink: /contact/
 ---

@@ -15,6 +15,9 @@
     <div class="site-content">
       <div class="fill--table">
         <div class="fill--row">
+        {% if page.page == "resume" %}
+          <main role="main" class="fill--cell resume">{{ content }}</main>
+        {% else %}
           <aside class="fill--cell">
             <img src="{{ site.url }}/img/{{ site.avatar }}" alt="jere.me" class="logo">
           </aside>
@@ -31,6 +34,7 @@
             <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
             {% endif %}
           </main>
+          {% endif %}
         </div>
       </div>
     </div>

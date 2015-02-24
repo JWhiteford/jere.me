@@ -1,15 +1,21 @@
-.btn {
-  background: $color-3;
-  color: $white;
-  display: inline-block;
-  padding: 1.4em 4em;
+%btn {
   text-transform: uppercase;
   font-weight: bold;
-  margin: 1em 0;
+  display: inline-block;
+  transition: all 0.3s;
   border-radius: 2px;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn {
+  @extend %btn;
+  background: $color-3;
+  color: $white;
+  padding: 1.4em 4em;
+  margin: 1em 0;
   border: none;
   border-bottom: 1px solid darken($color-3, 15%);
 
@@ -17,5 +23,18 @@
 
   &:hover {
     background: lighten($color-3, 5%);
+  }
+}
+
+.btn-ghost {
+  border: 2px solid $color-2;
+  background: transparent;
+  color: $color-2;
+  padding: .5em 2em;
+
+  &:hover {
+    border-color: lighten($color-2, 15%);
+    color: lighten($color-2, 15%);
+    background: transparent;
   }
 }

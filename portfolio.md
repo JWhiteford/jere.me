@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: portfolio
-description: portfolio
+description: jere.me - portfolio displaying only a small cluster of work
 page: portfolio
 permalink: /portfolio/
 ---
@@ -11,12 +11,12 @@ permalink: /portfolio/
     <li>
       <div class="cd-title">
           <h2>Dazzle</h2>
-          <p>Website design &#38; development for a local "Event Decorating" company.</p>
+          <p>Website design</p>
       </div>
       <div class="cd-project-info">
-          <p>This project is currently in the design stage but I'm pretty happy with what I've created so far. Typically our clients are in the oil and gas related; so its rare I get a chance to work on a project that's softer looking.</p>
-          <p>So far this has been fun to plan and design as I get to spend more time on typography and add subtle layering to the design.</p>
-          <p>An important part of this design is that I've been focused on keeping the site fast and fully responsive. The background is composed of css gradients and a single tiny svg; instead of a monstrous image.</p>
+          <p>This project is currently in the design stage but I'm pretty happy with what I've created so far. Typically our clients are in the oil and gas related; so its rare I get a chance to work on a project that's softer or more feminine in design.</p>
+          <p>So far this has been fun to plan and design as I get to spend more time on typography and add subtle layering.</p>
+          <p>An important part of planning this design is that I've been focused on creating it fast and fully responsive. To limit http requests I'm planning to limit the large images as much as possible. Currently I have the background composed of css gradients and a single tiny svg; instead of a single monstrous image.</p>
           <p><img src="../img/dazzle.jpg" alt="wedding decor web design" class="img-res"></p>
           <p>Once I've completed the site I will add a link.</p>
       </div>
@@ -24,7 +24,7 @@ permalink: /portfolio/
 
     <li>
       <div class="cd-title">
-        <h2>jere.me</h2>
+        <h2>Moi</h2>
         <p>Business card design</p>
       </div>
       <div class="cd-project-info">
@@ -35,28 +35,29 @@ permalink: /portfolio/
 
     <li>
       <div class="cd-title">
-        <h2>Best of bad SEO</h2>
+        <h2>Lander</h2>
         <p>Super fast, light-weight landing page</p>
       </div>
       <div class="cd-project-info">
-        <p>The collective at Google is much more intelligent than I; so I don't see a point in trying to trick them. Instead I'd rather abide to their guidelines and create simple, fast websites that users will hopefully find useful.</p>
-        <p>Although this site wasn't my choice I still wanted to improve on what it was.</p>
-        <p>Originally it was a true doorway page leading with a "mere 23" links to a single different website. Along with the numerous links it was exceedingly keyword stuffed (the single page had 46 references to "Edmonton web design") and very painful to read.</p>
-        <p>While I wasn't a big fan of the doorway site I was able to convert it into a landing page with a little bit of value.</p>
-        <p>My goal with this site was to make it fast and easy to read.</p>
-        <p><a href="http://www.edmontonwebs.com/" target="_blank">Edmonton webs</a></p>
+        <p>My personal opinion is that I'd rather work within Google's guideline than try to trick them. I don't think this site follows those guidelines exactly.</p>
+        <p>Although I didn't agree with the purpose of this site; I still wanted to make it as best as I could.</p>
+        <p>The original was peppered with spammy links and <del>stuffed</del>  crammed with keywords.</p>
+        <p>Instead of leaving it as a doorway page I converted it to a slightly less annoying landing page.</p>
+        <p>My goal for this site was to make it fast and easy to read.</p>
+        <p><a href="http://www.edmontonwebs.com" target="_blank" class="btn btn-ghost">Edmonton webs</a></p>
       </div>
     </li>
 
     <li>
       <div class="cd-title">
-        <h2>Victim Services</h2>
-        <p>Sylvan Lake VSU website</p>
+        <h2>Redacted</h2>
+        <p>Website design &#38; development</p>
       </div>
 
       <div class="cd-project-info">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.</p>
-        <p><a href="http://www.sylvanlakevictimservices.com/" target="_blank">Sylvan Lake Victim Services</a></p>
+        <p>I got to design and build this site but it never got the chance to be launched. Instead I scrapped it, changed the links and made the font "redacted".</p>
+        <p>It was unfortunate that it never got used but at least it was enjoyable to work on.</p>
+        <p><a href="http://petboarding.jere.me" target="_blank" class="btn btn-ghost">Pet boarding facility</a></p>
       </div>
     </li>
   </ul>

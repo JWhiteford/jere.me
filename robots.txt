@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: /resume
 
 Sitemap: http://jere.me/sitemap.xml
