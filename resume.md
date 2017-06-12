@@ -12,7 +12,7 @@ permalink: /resume/
 
 <div class="text-center">
   <h1>Jeremy Whiteford</h1>
-  <h3>Front-End Developer</h3>
+  <h3>Art Director / UX Design / Front-End Development</h3>
   <p>
     e: <a href="mailto:me@jere.me">me@jere.me</a> &#8226;  m: (780) 999-8011 &#8226; Edmonton, Alberta<br>
     <a href="http://jere.me">jere.me</a>
