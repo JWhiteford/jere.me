@@ -6,7 +6,7 @@ page: contact
 permalink: /contact/
 ---
 
-#Say hi!
+<h1>Say hi!</h1>
 <form action="//formspree.io/me@jere.me" method="POST">
   <input type="hidden" name="_next" value="http://jere.me/thanks" />
   <input type="hidden" name="_subject" value="New submission from jere.me" />
