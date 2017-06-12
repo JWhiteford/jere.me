@@ -5,8 +5,8 @@ description: resume of an Edmonton Front-End Web Developer - jere.me
 page: resume
 permalink: /resume/
 ---
-
-<a href="../pdfs/JeremyWhiteford-Resume_02-2015.pdf" target="_blank" class="btn btn-ghost">download my pdf resume</a>
+<!-- 
+<a href="../pdfs/JeremyWhiteford-Resume_02-2015.pdf" target="_blank" class="btn btn-ghost">download my pdf resume</a> -->
 
 ---
 
@@ -41,7 +41,13 @@ permalink: /resume/
 
 ### Professional Experience
 
-#### Industrial NetMedia | Leduc, Ab | 2009 - Present
+#### Stacks Inc. | Edmonton, Ab | 2014 - Present
+<p><em>Stacks technology powers libraries of all types including Microsoft, California Institute of Technology (Caltech) and Singapore University of Technology and Design.</em></p>
+
+#### Art Director
+<p>Art Director for web-based library software. Creation and implementation of branding guidelines.</p>
+
+#### Industrial NetMedia | Leduc, Ab | 2009 - 2014
 <p><em>A small web and software development company based out of Leduc, INM has created countless small business websites as well as high end HR management software for national oil companies.</em></p>
 
 #### Front-end Developer / Project Manager
