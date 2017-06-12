@@ -1,0 +1,23 @@
+﻿/* jere.me */
+/* humanstxt.org */
+
+/* CREATOR */
+  Name: Jeremy Whiteford
+  Site: jere.me
+  Twitter: @J_Whiteford
+  Facebook: www.facebook.com/jswhiteford
+  Google+: plus.google.com/+JeremyWhiteford1
+  Location: Edmonton, Alberta, Canada
+  Role: Graphic designer, Developer
+
+/* THANKS */
+  Name: Michelle B.
+  Background photography: Unsplash
+
+/* SITE */
+  Last update: 2015/01/28
+  Language: English
+  Standards: HTML5, CSS3
+  Components: Sass, Compass, Susy, modernizr, jQuery, markdown, node, gulp
+  Software: Git, Sublime Text, Atom.io, Illustrator, Photoshop, CLI
+  CMS: Jekyll

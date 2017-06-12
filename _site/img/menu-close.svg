@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="63px" height="61.1px" viewBox="-19 0 63 61.1" enable-background="new -19 0 63 61.1" xml:space="preserve">
+<circle fill="#701c1c" cx="13.3" cy="30.6" r="30.3"/>
+<g>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="5.1" y1="22.4" x2="21.5" y2="38.8"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="21.5" y1="22.4" x2="5.1" y2="38.8"/>
+</g>
+</svg>

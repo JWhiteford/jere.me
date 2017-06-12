@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jere.me - Edmonton web developer and designer</title>
+    <description>A front-end web development portfolio for jere.me. Located in Edmonton, Alberta. Building user friendly web sites for small business.</description>
+    <link>http://jere.me/</link>
+    <atom:link href="http://jere.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 24 Feb 2015 05:34:52 +0000</pubDate>
+    <lastBuildDate>Tue, 24 Feb 2015 05:34:52 +0000</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>up-and-running</title>
+        <description>&lt;p&gt;Although I've been a front-end developer for many years this is my first site about me.&lt;/p&gt;
+
+&lt;p&gt;In building this site I've got to learn a whole bunch of new things. My arsenal of tools has developed greatly and instead of being afraid of the command line, I look forward to learning more about it.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 09 Jan 2015 13:58:34 +0000</pubDate>
+        <link>http://jere.me/blog/up-and-running</link>
+        <guid isPermaLink="true">http://jere.me/blog/up-and-running</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>
