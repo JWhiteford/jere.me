@@ -13,7 +13,7 @@ default_bg:         background-lg.jpg
 
 # Build settings
 highlighter:        rouge
-markdown:           rdiscount
+markdown:           kramdown
 
 # Owner/author information
 owner:              jere.me
