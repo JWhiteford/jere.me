@@ -5,7 +5,7 @@
 
   <input type="checkbox" id="nav-trigger" class="nav-trigger" />
   <label for="nav-trigger"><span class="nav-icon"></span></label>
-  <nav role="navigation">
+  <nav>
     {% include nav.html %}
     <!-- <a href="{{ site.url }}/sitemap.xml" class="sitemap">sitemap</a> -->
   </nav>
@@ -16,12 +16,12 @@
       <div class="fill--table">
         <div class="fill--row">
         {% if page.page == "resume" %}
-          <main role="main" class="fill--cell resume">{{ content }}</main>
+          <main class="fill--cell resume">{{ content }}</main>
         {% else %}
           <aside class="fill--cell">
             <img src="{{ site.url }}/img/{{ site.avatar }}" alt="jere.me" class="logo">
           </aside>
-          <main role="main" class="fill--cell">
+          <main class="fill--cell">
             {{ content }}
             {% if page.page == "blog" %}
             <ul class="post-list">
