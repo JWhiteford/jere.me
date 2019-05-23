@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jere.me
+Token: 1671686fad851835ee5323f3c742323befd922f405111d3985d8d1b455449dd0
