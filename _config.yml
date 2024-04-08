@@ -3,7 +3,7 @@ title:              jere.me - Edmonton web developer and designer
 description:        "A front-end web development portfolio for jere.me. Located in Edmonton, Alberta. Building user friendly web sites for small business."
 logo:
 baseurl:            "" # the subpath of your site, e.g. /blog/
-url:                "//jere.me" # the base hostname & protocol for your site **** change to http://jere.me ****
+url:                "https://jere.me" # the base hostname & protocol for your site **** change to http://jere.me ****
 search:             true
 share:              true
 readtime:           true
